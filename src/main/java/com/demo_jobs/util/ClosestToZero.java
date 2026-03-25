@@ -8,7 +8,7 @@ public class ClosestToZero {
         for (int n : nums) {
             int num = Math.abs(n);
             int closestAbs = Math.abs(closest);
-            if (Math.abs(n) < Math.abs(closest) || (Math.abs(n) == Math.abs(closest) && n > closest)) {
+            if (Math.abs(n) < Math.abs(closest) /*|| (Math.abs(n) == Math.abs(closest) && n > closest)*/) {
                 closest = n;
             }
         }
